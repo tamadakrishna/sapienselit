@@ -1,13 +1,16 @@
+"use client";
 import React from 'react'
 import SignIn from '../UI/SignIn'
 import HeaderOptions from '../UI/HeaderOptions'
+import { useRouter } from 'next/navigation'
 
 function Header() {
+    const router = useRouter();
   return (
     <div className="w-[100%] h-[100%] border-b-[2px] border-[#D7DEE4] bg-[#FAFBFC]
         flex">
         <div className="w-[50%] flex items-center ">
-            <div className="ml-[60px]">
+            <div className="ml-[60px] cursor-pointer" onClick={()=>{router.push('/')}}>
                 <span className='playwrite text-[30px]'>Sapienselit</span>
             </div>
             <HeaderOptions/>
