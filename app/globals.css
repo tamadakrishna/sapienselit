@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -22,6 +23,7 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;;
 }
 
 header {
@@ -32,5 +34,16 @@ header {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .playwrite{
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
   }
 }

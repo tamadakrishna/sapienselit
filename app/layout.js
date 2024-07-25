@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
         <header>
           <Header/>
         </header>
-        {children}
+        <div className="h-[calc(100%_-_55px)]">
+          {children}
+        </div>
       </body>
     </html>
   );

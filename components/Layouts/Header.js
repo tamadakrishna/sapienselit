@@ -7,6 +7,9 @@ function Header() {
     <div className="w-[100%] h-[100%] border-b-[2px] border-[#D7DEE4] bg-[#FAFBFC]
         flex">
         <div className="w-[50%] flex items-center ">
+            <div className="ml-[60px]">
+                <span className='playwrite text-[30px]'>Sapienselit</span>
+            </div>
             <HeaderOptions/>
         </div>
         <div className='w-[50%] h-[100%]  flex justify-end items-center'>

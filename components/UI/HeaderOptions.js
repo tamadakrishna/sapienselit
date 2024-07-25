@@ -2,10 +2,10 @@ import React from 'react'
 
 function HeaderOptions() {
   return (
-    <div className='ml-[280px]'>
+    <div className='ml-[220px]'>
         <ul className="flex">
-            <li>Courses</li>
-            <li className='ml-[80px]'>Books</li>
+            <li className='cursor-pointer'>Courses</li>
+            <li className='cursor-pointer ml-[80px]'>Books</li>
         </ul>
     </div>
   )
